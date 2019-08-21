@@ -1,0 +1,183 @@
+.footer
+  @media (min-width: 768px)
+    height: 325px
+
+  @media (min-width: 1200px)
+    height: 240px
+
+  &__inner
+    border-top: 1px solid #d5d5d5
+    padding-top: 30px
+
+    @media(max-width: 767px)
+      padding-bottom: 20px
+
+    @media (min-width: 768px)
+      padding-top: 40px
+      padding-left: 200px
+      padding-right: 200px
+      position: relative
+
+    @media (min-width: 1200px)
+      padding-top: 65px
+      padding-left: 225px
+      padding-right: 255px
+
+  &__menu
+    display: flex
+    justify-content: space-between
+
+  &__menu-block
+    @media(min-width: 980px)
+      display: flex
+
+    &:first-child
+      @media(max-width: 767px)
+        order: 2
+
+      .footer-menu
+        font-size: 11px
+        font-weight: 700
+        text-transform: uppercase
+
+        @media(min-width: 1200px)
+          font-size: 12px
+
+    &:last-child
+      @media(max-width: 767px)
+        order: 1
+
+    .footer-menu
+      @media(min-width: 980px)
+        margin-right: 40px
+
+      @media(min-width: 1200px)
+        margin-right: 85px
+
+      &:last-child
+        margin-right: 0
+
+  &__bottom
+    @media(max-width: 767px)
+      align-items: center
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+
+    @media(min-width: 768px)
+      left: auto
+      position: absolute
+      right: 0
+      top: 40px
+
+    @media(min-width: 1200px)
+      top: 65px
+
+    .footer__logo
+      display: block
+
+      @media(min-width: 768px)
+        display: none
+
+  &__phone
+    color: #d5ba96
+    font-size: 14px
+    font-weight: 700
+    width: 100%
+
+    @media(max-width: 767px)
+      margin-bottom: 15px
+      order: 1
+
+    @media(min-width: 768px)
+      text-align: right
+
+    a
+      color: #d5ba96
+      display: inline-block
+      padding-top: 8px
+      padding-bottom: 8px
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+  &__logo
+    display: none
+    width: 98px
+
+    @media(max-width: 767px)
+      order: 2
+
+    @media(min-width: 768px)
+      display: block
+      left: 0
+      position: absolute
+      top: 55px
+      width: 123px
+
+    @media(min-width: 1200px)
+      top: 80px
+
+  &__socials
+    display: flex
+
+    @media(max-width: 767px)
+      order: 3
+
+    @media(min-width: 768px)
+      justify-content: flex-end
+
+    .social-link
+      margin-right: 15px
+
+      &:last-child
+        margin-right: 0
+
+.footer-menu
+  list-style: none
+  margin-bottom: 0
+  padding: 0
+
+  &__link
+    align-items: center
+    color: #222
+    display: inline-flex
+    min-height: 40px
+    padding-top: 8px
+    padding-bottom: 8px
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+.social-link
+  align-items: center
+  display: flex
+  justify-content: center
+  height: 30px
+  position: relative
+  text-decoration: none
+  width: 30px
+
+  &::after
+    background-color: #222
+    border-radius: 50%
+    content: ''
+    height: 25px
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 25px
+    z-index: 1
+
+  &__icon
+    fill: #fff
+    height: 16px
+    pointer-events: none
+    position: relative
+    width: 16px
+    z-index: 2
