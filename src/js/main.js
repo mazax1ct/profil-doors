@@ -3,7 +3,14 @@ $(document).ready(function () {
   $('.js-menu-opener').click(function () {
     $('body').toggleClass('overflow');
     $(this).toggleClass('is-active');
-    $('.menu-block').toggleClass('is-open');
+    $('.mobile-menu').toggleClass('is-open');
+    return false;
+  });
+
+  //открытие/закрытие меню второго уровня
+  $('.js-root').click(function () {
+    $(this).toggleClass('is-active');
+    $(this).next('.second-level-menu').toggleClass('is-open');
     return false;
   });
 

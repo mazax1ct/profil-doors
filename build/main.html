@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body>
+<body class="main-page">
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="arrow_left" viewBox="0 0 28 12">
       <g>
@@ -43,40 +43,89 @@
   </svg>
   <div class="wrapper">
     <header class="header">
-      <div class="header__inner container">
-        <a class="logo" href="main.html" title="На главную"><img src="images/logo.png" alt="PROFIL DOORS"></a>
-        <div class="header__phone">
-          <a href="tel:+74957742904">+7 (495) 774-29-04</a>
-        </div>
-        <button class="js-menu-opener menu-opener" type="button" title="Меню"><span class="menu-opener__burger"></span></button>
-      </div>
-      <nav class="menu-block">
-        <div class="menu-block__inner">
+      <div class="header__inner">
+        <div class="header__container container">
+          <a class="logo" href="main.html" title="На главную"><img src="images/logo.png" alt="PROFIL DOORS"></a>
           <div class="service-menu">
             <ul class="service-menu__list">
               <li class="service-menu__item"><a class="service-menu__link is-active" href="#">О нас</a></li>
               <li class="service-menu__item"><a class="service-menu__link" href="#">Блог</a></li>
               <li class="service-menu__item"><a class="service-menu__link" href="#">Установка</a></li>
-            </ul>
-            <ul class="service-menu__list">
               <li class="service-menu__item"><a class="service-menu__link" href="#">Доставка</a></li>
               <li class="service-menu__item"><a class="service-menu__link" href="#">Услуги</a></li>
               <li class="service-menu__item"><a class="service-menu__link" href="#">Контакты</a></li>
             </ul>
           </div>
-          <div class="main-menu">
-            <ul class="main-menu__list">
-              <li class="main-menu__item"><a class="main-menu__link is-active" href="#">Межкомнатные двери</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Входные двери</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Раздвижные двери</a></li>
+          <div class="header__phone">
+            <a href="tel:+74957742904">+7 (495) 774-29-04</a>
+            <button class="recall-button" type="button">ОБРАТНАЯ СВЯЗЬ</button>
+          </div>
+          <button class="js-menu-opener menu-opener" type="button" title="Меню"><span class="menu-opener__burger"></span></button>
+        </div>
+        <nav class="menu-block">
+          <div class="menu-block__inner">
+            <div class="main-menu">
+              <ul class="main-menu__list">
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Межкомнатные двери</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Раздвижные двери</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Перегородки</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Фурнитура</a></li>
+                <li class="main-menu__item"><a class="main-menu__link main-menu__link--button" href="#">Вызвать замерщика</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu__inner">
+          <div class="mobile-menu__block">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">О нас</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Блог</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Установка</a></li>
             </ul>
-            <ul class="main-menu__list">
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Перегородки</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Фурнитура</a></li>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Доставка</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Услуги</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="mobile-menu__block">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="js-root mobile-menu__link root" href="#">Межкомнатные двери</a>
+                <ul class="second-level-menu">
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Серия XN</a></li>
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Серия U</a></li>
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Серия L</a></li>
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Серия STP</a></li>
+                </ul>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="js-root mobile-menu__link root" href="#">Раздвижные двери</a>
+                <ul class="second-level-menu">
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Magic</a></li>
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Compack</a></li>
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Poto</a></li>
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Книжка</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Перегородки</a></li>
+              <li class="mobile-menu__item">
+                <a class="js-root mobile-menu__link root" href="#">Фурнитура</a>
+                <ul class="second-level-menu">
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Петли</a></li>
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Ручки</a></li>
+                  <li class="second-level-menu__item"><a class="second-level-menu__link" href="#">Замки</a></li>
+                </ul>
+              </li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Вызвать замерщика</a></li>
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
     <div class="page-content">
       <div class="main-banner-block">

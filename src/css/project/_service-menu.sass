@@ -1,0 +1,40 @@
+.service-menu
+  display: none
+  font-size: 13px
+
+  @media(min-width: 1200px)
+    display: flex
+    justify-content: center
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    z-index: 1
+
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+
+    @media(min-width: 1200px)
+      display: flex
+
+  &__item
+    @media(min-width: 1200px)
+      margin-left: 26px
+      margin-right: 26px
+
+  &__link
+    align-items: center
+    color: #222
+    display: inline-flex
+    min-height: 40px
+    padding-top: 8px
+    padding-bottom: 8px
+    text-decoration: none
+
+    &.is-active
+      text-decoration: underline
+
+    &:hover,
+    &:focus
+      text-decoration: underline

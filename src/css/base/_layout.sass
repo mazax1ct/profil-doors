@@ -15,21 +15,30 @@ body
   overflow-wrap: break-word
 
   &.overflow
-    @media(max-width: 767px)
+    @media(max-width: 1199px)
       overflow: hidden
 
+.main-page
+  .wrapper
+    @media (min-width: 768px)
+      padding-top: 105px
+
+    @media (min-width: 1200px)
+      padding-top: 130px
+
 .wrapper
-  padding-top: 84px
+  padding-top: 80px
 
   @media (min-width: 768px)
     min-height: 100%
     height: auto !important
     height: 100%
     margin-bottom: -325px
-    padding-top: 110px
+    padding-top: 210px
 
   @media (min-width: 1200px)
     margin-bottom: -240px
+    padding-top: 230px
 
   &::after
     @media (min-width: 768px)
