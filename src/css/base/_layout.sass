@@ -24,10 +24,14 @@ body
       padding-top: 105px
 
     @media (min-width: 1200px)
-      padding-top: 130px
+      padding-top: 0
+
+  .page-content
+    @media(min-width: 1200px)
+      padding-top: 0
 
 .wrapper
-  padding-top: 80px
+  padding-top: 105px
 
   @media (min-width: 768px)
     min-height: 100%
@@ -38,7 +42,7 @@ body
 
   @media (min-width: 1200px)
     margin-bottom: -240px
-    padding-top: 230px
+    padding-top: 0
 
   &::after
     @media (min-width: 768px)
@@ -64,5 +68,12 @@ body
 .page-content
   padding-bottom: 70px
 
-  &--main
-    padding-top: 0
+  @media(min-width: 1200px)
+    padding-top: 30px
+
+.centred_block
+  margin-left: auto
+  margin-right: auto
+
+.max_w800
+  max-width: 800px

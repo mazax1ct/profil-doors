@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Главная</title>
+  <title>Новости</title>
 
   <meta name="description" content="">
 
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body class="main-page">
+<body>
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="arrow_left" viewBox="0 0 28 12">
       <g>
@@ -69,12 +69,42 @@
           <div class="menu-block__inner">
             <div class="main-menu">
               <ul class="main-menu__list">
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Межкомнатные двери</a></li>
+                <li class="main-menu__item"><a class="main-menu__link is-active" href="#">Межкомнатные двери</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="#">Раздвижные двери</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="#">Перегородки</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="#">Фурнитура</a></li>
                 <li class="main-menu__item"><a class="main-menu__link main-menu__link--button" href="#">Вызвать замерщика</a></li>
               </ul>
+            </div>
+            <div class="catalog-menu-block">
+              <div id="pnProductNav" class="catalog-menu dragscroll">
+                <ul id="pnProductNavContents" class="catalog-menu__list">
+                  <li class="catalog-menu__item"><a class="catalog-menu__link is-active" href="#">Серия XN</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия U</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия L</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия STP</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия N</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия NK</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия X</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия ZN</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия LK</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия E</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия STK</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия Z</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия VG</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия SMK</a></li>
+                </ul>
+              </div>
+              <button id="pnAdvancerLeft" class="catalog-menu__button catalog-menu__button--left" type="button">
+                <svg class="catalog-menu__icon" aria-hidden="true">
+                  <use xlink:href="#arrow_left" />
+                </svg>
+              </button>
+              <button id="pnAdvancerRight" class="catalog-menu__button catalog-menu__button--right" type="button">
+                <svg class="catalog-menu__icon" aria-hidden="true">
+                  <use xlink:href="#arrow_right" />
+                </svg>
+              </button>
             </div>
           </div>
         </nav>
@@ -131,115 +161,14 @@
       </div>
     </header>
     <div class="page-content">
-      <div class="main-banner-block">
-        <div class="js-main-slider main-banner">
-          <div class="main-banner__item">
-            <img class="main-banner__image" src="images/content/img_1.jpg" alt="Изображение 1">
-            <div class="main-banner__container container">
-              <div class="main-banner__series">
-                <div class="main-banner__series-mark">x</div>
-                <div class="main-banner__series-text">СЕРИЯ X</div>
-              </div>
-              <p class="main-banner__title">СОВРЕМЕННЫЕ МОДЕЛИ ДВЕРЕЙ В ИЗЫСКАННОМ ИНТЕРЬЕРЕ</p>
-              <p class="main-banner__link-block"><a class="main-banner__link" href="#">ПОДРОБНЕЕ</a></p>
-            </div>
-          </div>
-          <div class="main-banner__item">
-            <img class="main-banner__image" src="images/content/img_1.jpg" alt="Изображение 1">
-            <div class="main-banner__container container">
-              <p class="main-banner__title">СОВРЕМЕННЫЕ МОДЕЛИ ДВЕРЕЙ В ИЗЫСКАННОМ ИНТЕРЬЕРЕ</p>
-              <p class="main-banner__link-block"><a class="main-banner__link" href="#">ПОДРОБНЕЕ</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="js-main-banner-nav main-banner-nav">
-          <div class="js-main-slider-count main-slider-count"></div>
-        </div>
-      </div>
       <div class="container">
-        <div class="products-section">
-          <div class="products-section__title-block">
-            <p class="products-section__title h2">Межкомнатные двери</p>
-            <div class="js-products-slider-nav products-slider-nav"></div>
-          </div>
-          <div class="js-products-slider products-slider">
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_2.jpg" alt="Дверь 4E">
-                </span>
-                <span class="product__title">4E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_3.jpg" alt="Дверь 5E">
-                </span>
-                <span class="product__title">5E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_4.jpg" alt="Дверь 6E">
-                </span>
-                <span class="product__title">6E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_5.jpg" alt="Дверь 7E">
-                </span>
-                <span class="product__title">7E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_6.jpg" alt="Дверь 8E">
-                </span>
-                <span class="product__title">8E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_2.jpg" alt="Дверь 4E">
-                </span>
-                <span class="product__title">4E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_3.jpg" alt="Дверь 5E">
-                </span>
-                <span class="product__title">5E</span>
-              </a>
-            </div>
-          </div>
-          <p class="more-link-block"><a class="more-link" href="news.html">ПОСМОТРЕТЬ ВСЕ</a></p>
-        </div>
-        <div class="about">
-          <div class="about__image">
-            <img src="images/content/img_7.jpg" alt="Изображение">
-          </div>
-          <div class="about__text">
-            <h1>Фабрика ProfilDoors</h1>
-            <p>Фабрика ProfilDoors образована в 2002 г. и была ориентирована на изготовление комплектующих для дверных фабрик.</p>
-            <p>2004 г. — серийный запуск производства межкомнатных дверей. На сегодняшний день ProfilDoors является одним из крупнейших производителей межкомнатных дверей. На ряду со стандартными технологическими процессами по изготовлению
-              выпускаемой
-              продукции, ключевое значение уделяется собственным разработкам.</p>
-          </div>
-        </div>
-        <div class="download-block">
-          <p class="download-block__title">КАТАЛОГ ДВЕРЕЙ</p>
-          <div class="download-block__image"><img src="images/decor/download-block.png" alt="КАТАЛОГ ДВЕРЕЙ"></div>
-          <p><a class="download-block__link" href="#" target="_blank">СКАЧАТЬ</a></p>
-        </div>
-        <h2>Новости</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">Новости</li>
+        </ul>
+        <h1>Новости</h1>
         <div class="news-list">
           <div class="news-list__item">
             <a class="news-item" href="news-detail.html">
@@ -268,8 +197,61 @@
               <span class="news-item__title">Межкомнатные двери для ванной и туалета, на чем остановить свой выбор?</span>
             </a>
           </div>
+          <div class="news-list__item">
+            <a class="news-item" href="news-detail.html">
+              <span class="news-item__date">12 июля 2019</span>
+              <span class="news-item__image">
+                <img src="images/content/img_8.jpg" alt="Покупаем недорогую межкомнатную дверь в Москве">
+              </span>
+              <span class="news-item__title">Покупаем недорогую межкомнатную дверь в Москве</span>
+            </a>
+          </div>
+          <div class="news-list__item">
+            <a class="news-item" href="news-detail.html">
+              <span class="news-item__date">9 июня 2019</span>
+              <span class="news-item__image">
+                <img src="images/content/img_9.jpg" alt="Двери «гармошка» — разумное решение для больших помещений">
+              </span>
+              <span class="news-item__title">Двери «гармошка» — разумное решение для больших помещений</span>
+            </a>
+          </div>
+          <div class="news-list__item">
+            <a class="news-item" href="news-detail.html">
+              <span class="news-item__date">23 мая 2019</span>
+              <span class="news-item__image">
+                <img src="images/content/img_10.jpg" alt="Межкомнатные двери для ванной и туалета, на чем остановить свой выбор?">
+              </span>
+              <span class="news-item__title">Межкомнатные двери для ванной и туалета, на чем остановить свой выбор?</span>
+            </a>
+          </div>
+          <div class="news-list__item">
+            <a class="news-item" href="news-detail.html">
+              <span class="news-item__date">12 июля 2019</span>
+              <span class="news-item__image">
+                <img src="images/content/img_8.jpg" alt="Покупаем недорогую межкомнатную дверь в Москве">
+              </span>
+              <span class="news-item__title">Покупаем недорогую межкомнатную дверь в Москве</span>
+            </a>
+          </div>
+          <div class="news-list__item">
+            <a class="news-item" href="news-detail.html">
+              <span class="news-item__date">9 июня 2019</span>
+              <span class="news-item__image">
+                <img src="images/content/img_9.jpg" alt="Двери «гармошка» — разумное решение для больших помещений">
+              </span>
+              <span class="news-item__title">Двери «гармошка» — разумное решение для больших помещений</span>
+            </a>
+          </div>
+          <div class="news-list__item">
+            <a class="news-item" href="news-detail.html">
+              <span class="news-item__date">23 мая 2019</span>
+              <span class="news-item__image">
+                <img src="images/content/img_10.jpg" alt="Межкомнатные двери для ванной и туалета, на чем остановить свой выбор?">
+              </span>
+              <span class="news-item__title">Межкомнатные двери для ванной и туалета, на чем остановить свой выбор?</span>
+            </a>
+          </div>
         </div>
-        <p class="more-link-block"><a class="more-link" href="news.html">ПОСМОТРЕТЬ ВСЕ</a></p>
       </div>
     </div>
   </div>
@@ -327,6 +309,7 @@
   </footer>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/drag-scroll.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>

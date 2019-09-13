@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Контакты</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header_inner.html
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">О нас</li>
+        </ul>
+        <h1>Контакты</h1>
+        <div class="contacts">
+          <div class="contacts__block">
+            <p>108827, г. Москва, поселение Щаповское, поселок Курилово, строение 6</p>
+          </div>
+          <div class="contacts__block">
+            <p><a href="tel:+74957742904">+7&nbsp;(495)&nbsp;774-29-04</a></p>
+          </div>
+          <div class="contacts__block">
+            <p><a href="mailto:hello@profildoors-dveri.ru">hello@profildoors-dveri.ru</a></p>
+          </div>
+        </div>
+        <div id="map" class="map"></div>
+        <div class="form">
+          <p class="form__title">Напишите нам</p>
+          <div class="form__row form__row--flex">
+            <div class="form__block form__block--w_33">
+              <div class="input-label" for="fio">
+                <input id="fio" class="js-input input" type="text" name="fio" value="">
+                <span class="input-label__placeholder">Фио</span>
+              </div>
+            </div>
+            <div class="form__block form__block--w_33">
+              <div class="input-label" for="tel">
+                <input id="tel" class="js-input input" type="text" name="tel" value="">
+                <span class="input-label__placeholder">Телефон</span>
+              </div>
+            </div>
+            <div class="form__block form__block--w_33">
+              <div class="input-label" for="email">
+                <input id="email" class="js-input input error" type="text" name="email" value="">
+                <span class="input-label__placeholder">Email</span>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="input-label" for="message">
+              <textarea id="message" class="js-input textarea" name="message"></textarea>
+              <span class="input-label__placeholder">Сообщение</span>
+            </div>
+          </div>
+          <button class="form__submit" type="submit">
+            <span>ОТПРАВИТЬ</span>
+            <svg class="form__submit-icon" aria-hidden="true">
+              <use xlink:href="#small-arrow-right" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  //= template/footer.html
+
+  //= template/scripts_inner.html
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgRF4t3ph-ZJSEXkxIJr-H08zNYQvqb4&callback=initContactsMap" async defer></script>
+  <script>
+    function initContactsMap() {
+      var pointLatLng = {
+        lat: 55.377743,
+        lng: 37.384178
+      };
+
+      var stylesArray = [{
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#444444"
+          }]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [{
+            "color": "#f2f2f2"
+          }]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [{
+              "saturation": -100
+            },
+            {
+              "lightness": 45
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "simplified"
+          }]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [{
+              "color": "#dedee4"
+            },
+            {
+              "visibility": "on"
+            }
+          ]
+        }
+      ];
+
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 16,
+        center: pointLatLng,
+        scrollwheel: false,
+        zoomControl: false,
+        scaleControl: false,
+        mapTypeControl: false,
+        streetViewControl: false,
+        styles: stylesArray
+      });
+
+      var icon = {
+        path: "M15,0c-7.7,0.2-14,6-14.9,13.7C-0.1,15.1,0,16.6,0.3,18l0,0c0,0,0,0.2,0.1,0.5c0.2,1,0.6,2,1,3c1.6,3.6,5.1,9.6,13.2,16.2c0.5,0.4,1.2,0.4,1.7,0c8.1-6.5,11.7-12.6,13.2-16.2c0.5-1,0.8-2,1-3c0.1-0.3,0.1-0.5,0.1-0.5l0,0c0.2-0.9,0.3-1.9,0.3-2.9C30.9,6.7,23.9-0.1,15.5,0C15.3,0,15.1,0,15,0z M15.5,22.7c-4.1-0.1-7.3-3.5-7.2-7.5c0.1-4.1,3.5-7.3,7.5-7.2c4,0.1,7.2,3.4,7.2,7.4C23,19.5,19.6,22.7,15.5,22.7z",
+        fillColor: '#c69c6d',
+        fillOpacity: 1,
+        anchor: new google.maps.Point(15, 38),
+        strokeWeight: 0,
+        scale: 1
+      };
+
+      var marker = new google.maps.Marker({
+        position: pointLatLng,
+        map: map,
+        draggable: false,
+        icon: icon
+      });
+    }
+  </script>
+</body>
+
+</html>

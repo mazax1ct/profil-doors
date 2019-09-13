@@ -1,0 +1,49 @@
+.contacts
+  color: #000
+  font-size: 16px
+  font-weight: 500
+  line-height: 1.2
+  margin-bottom: 15px
+
+  @media(min-width: 768px)
+    display: flex
+    justify-content: space-between
+    margin-bottom: 35px
+
+  @media(min-width: 1200px)
+    font-size: 20px
+    margin-bottom: 50px
+
+  &__block
+    max-width: 410px
+    margin-bottom: 15px
+
+    @media(min-width:768px)
+      margin-bottom: 0
+      padding-left: 30px
+      padding-right: 30px
+
+    &:first-child
+      @media(min-width:768px)
+        padding-left: 0
+
+    &:last-child
+      @media(min-width:768px)
+        padding-right: 0
+
+  a
+    color: #d5ba96
+    text-decoration: none
+    white-space: nowrap
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+.map
+  height: 315px
+  margin-bottom: 50px
+
+  @media(min-width: 1200px)
+    height: 500px
+    margin-bottom: 80px

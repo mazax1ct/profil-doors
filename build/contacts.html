@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Главная</title>
+  <title>Контакты</title>
 
   <meta name="description" content="">
 
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body class="main-page">
+<body>
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="arrow_left" viewBox="0 0 28 12">
       <g>
@@ -69,12 +69,42 @@
           <div class="menu-block__inner">
             <div class="main-menu">
               <ul class="main-menu__list">
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Межкомнатные двери</a></li>
+                <li class="main-menu__item"><a class="main-menu__link is-active" href="#">Межкомнатные двери</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="#">Раздвижные двери</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="#">Перегородки</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="#">Фурнитура</a></li>
                 <li class="main-menu__item"><a class="main-menu__link main-menu__link--button" href="#">Вызвать замерщика</a></li>
               </ul>
+            </div>
+            <div class="catalog-menu-block">
+              <div id="pnProductNav" class="catalog-menu dragscroll">
+                <ul id="pnProductNavContents" class="catalog-menu__list">
+                  <li class="catalog-menu__item"><a class="catalog-menu__link is-active" href="#">Серия XN</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия U</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия L</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия STP</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия N</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия NK</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия X</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия ZN</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия LK</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия E</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия STK</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия Z</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия VG</a></li>
+                  <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Серия SMK</a></li>
+                </ul>
+              </div>
+              <button id="pnAdvancerLeft" class="catalog-menu__button catalog-menu__button--left" type="button">
+                <svg class="catalog-menu__icon" aria-hidden="true">
+                  <use xlink:href="#arrow_left" />
+                </svg>
+              </button>
+              <button id="pnAdvancerRight" class="catalog-menu__button catalog-menu__button--right" type="button">
+                <svg class="catalog-menu__icon" aria-hidden="true">
+                  <use xlink:href="#arrow_right" />
+                </svg>
+              </button>
             </div>
           </div>
         </nav>
@@ -131,145 +161,61 @@
       </div>
     </header>
     <div class="page-content">
-      <div class="main-banner-block">
-        <div class="js-main-slider main-banner">
-          <div class="main-banner__item">
-            <img class="main-banner__image" src="images/content/img_1.jpg" alt="Изображение 1">
-            <div class="main-banner__container container">
-              <div class="main-banner__series">
-                <div class="main-banner__series-mark">x</div>
-                <div class="main-banner__series-text">СЕРИЯ X</div>
-              </div>
-              <p class="main-banner__title">СОВРЕМЕННЫЕ МОДЕЛИ ДВЕРЕЙ В ИЗЫСКАННОМ ИНТЕРЬЕРЕ</p>
-              <p class="main-banner__link-block"><a class="main-banner__link" href="#">ПОДРОБНЕЕ</a></p>
-            </div>
-          </div>
-          <div class="main-banner__item">
-            <img class="main-banner__image" src="images/content/img_1.jpg" alt="Изображение 1">
-            <div class="main-banner__container container">
-              <p class="main-banner__title">СОВРЕМЕННЫЕ МОДЕЛИ ДВЕРЕЙ В ИЗЫСКАННОМ ИНТЕРЬЕРЕ</p>
-              <p class="main-banner__link-block"><a class="main-banner__link" href="#">ПОДРОБНЕЕ</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="js-main-banner-nav main-banner-nav">
-          <div class="js-main-slider-count main-slider-count"></div>
-        </div>
-      </div>
       <div class="container">
-        <div class="products-section">
-          <div class="products-section__title-block">
-            <p class="products-section__title h2">Межкомнатные двери</p>
-            <div class="js-products-slider-nav products-slider-nav"></div>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">О нас</li>
+        </ul>
+        <h1>Контакты</h1>
+        <div class="contacts">
+          <div class="contacts__block">
+            <p>108827, г. Москва, поселение Щаповское, поселок Курилово, строение 6</p>
           </div>
-          <div class="js-products-slider products-slider">
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_2.jpg" alt="Дверь 4E">
-                </span>
-                <span class="product__title">4E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_3.jpg" alt="Дверь 5E">
-                </span>
-                <span class="product__title">5E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_4.jpg" alt="Дверь 6E">
-                </span>
-                <span class="product__title">6E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_5.jpg" alt="Дверь 7E">
-                </span>
-                <span class="product__title">7E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_6.jpg" alt="Дверь 8E">
-                </span>
-                <span class="product__title">8E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_2.jpg" alt="Дверь 4E">
-                </span>
-                <span class="product__title">4E</span>
-              </a>
-            </div>
-            <div class="products-slider__item">
-              <a class="product" href="detail.html">
-                <span class="product__image">
-                  <img src="images/content/img_3.jpg" alt="Дверь 5E">
-                </span>
-                <span class="product__title">5E</span>
-              </a>
-            </div>
+          <div class="contacts__block">
+            <p><a href="tel:+74957742904">+7&nbsp;(495)&nbsp;774-29-04</a></p>
           </div>
-          <p class="more-link-block"><a class="more-link" href="news.html">ПОСМОТРЕТЬ ВСЕ</a></p>
-        </div>
-        <div class="about">
-          <div class="about__image">
-            <img src="images/content/img_7.jpg" alt="Изображение">
-          </div>
-          <div class="about__text">
-            <h1>Фабрика ProfilDoors</h1>
-            <p>Фабрика ProfilDoors образована в 2002 г. и была ориентирована на изготовление комплектующих для дверных фабрик.</p>
-            <p>2004 г. — серийный запуск производства межкомнатных дверей. На сегодняшний день ProfilDoors является одним из крупнейших производителей межкомнатных дверей. На ряду со стандартными технологическими процессами по изготовлению
-              выпускаемой
-              продукции, ключевое значение уделяется собственным разработкам.</p>
+          <div class="contacts__block">
+            <p><a href="mailto:hello@profildoors-dveri.ru">hello@profildoors-dveri.ru</a></p>
           </div>
         </div>
-        <div class="download-block">
-          <p class="download-block__title">КАТАЛОГ ДВЕРЕЙ</p>
-          <div class="download-block__image"><img src="images/decor/download-block.png" alt="КАТАЛОГ ДВЕРЕЙ"></div>
-          <p><a class="download-block__link" href="#" target="_blank">СКАЧАТЬ</a></p>
+        <div id="map" class="map"></div>
+        <div class="form">
+          <p class="form__title">Напишите нам</p>
+          <div class="form__row form__row--flex">
+            <div class="form__block form__block--w_33">
+              <div class="input-label" for="fio">
+                <input id="fio" class="js-input input" type="text" name="fio" value="">
+                <span class="input-label__placeholder">Фио</span>
+              </div>
+            </div>
+            <div class="form__block form__block--w_33">
+              <div class="input-label" for="tel">
+                <input id="tel" class="js-input input" type="text" name="tel" value="">
+                <span class="input-label__placeholder">Телефон</span>
+              </div>
+            </div>
+            <div class="form__block form__block--w_33">
+              <div class="input-label" for="email">
+                <input id="email" class="js-input input error" type="text" name="email" value="">
+                <span class="input-label__placeholder">Email</span>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="input-label" for="message">
+              <textarea id="message" class="js-input textarea" name="message"></textarea>
+              <span class="input-label__placeholder">Сообщение</span>
+            </div>
+          </div>
+          <button class="form__submit" type="submit">
+            <span>ОТПРАВИТЬ</span>
+            <svg class="form__submit-icon" aria-hidden="true">
+              <use xlink:href="#small-arrow-right" />
+            </svg>
+          </button>
         </div>
-        <h2>Новости</h2>
-        <div class="news-list">
-          <div class="news-list__item">
-            <a class="news-item" href="news-detail.html">
-              <span class="news-item__date">12 июля 2019</span>
-              <span class="news-item__image">
-                <img src="images/content/img_8.jpg" alt="Покупаем недорогую межкомнатную дверь в Москве">
-              </span>
-              <span class="news-item__title">Покупаем недорогую межкомнатную дверь в Москве</span>
-            </a>
-          </div>
-          <div class="news-list__item">
-            <a class="news-item" href="news-detail.html">
-              <span class="news-item__date">9 июня 2019</span>
-              <span class="news-item__image">
-                <img src="images/content/img_9.jpg" alt="Двери «гармошка» — разумное решение для больших помещений">
-              </span>
-              <span class="news-item__title">Двери «гармошка» — разумное решение для больших помещений</span>
-            </a>
-          </div>
-          <div class="news-list__item">
-            <a class="news-item" href="news-detail.html">
-              <span class="news-item__date">23 мая 2019</span>
-              <span class="news-item__image">
-                <img src="images/content/img_10.jpg" alt="Межкомнатные двери для ванной и туалета, на чем остановить свой выбор?">
-              </span>
-              <span class="news-item__title">Межкомнатные двери для ванной и туалета, на чем остановить свой выбор?</span>
-            </a>
-          </div>
-        </div>
-        <p class="more-link-block"><a class="more-link" href="news.html">ПОСМОТРЕТЬ ВСЕ</a></p>
       </div>
     </div>
   </div>
@@ -327,8 +273,111 @@
   </footer>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/drag-scroll.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgRF4t3ph-ZJSEXkxIJr-H08zNYQvqb4&callback=initContactsMap" async defer></script>
+  <script>
+    function initContactsMap() {
+      var pointLatLng = {
+        lat: 55.377743,
+        lng: 37.384178
+      };
+
+      var stylesArray = [{
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#444444"
+          }]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [{
+            "color": "#f2f2f2"
+          }]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [{
+              "saturation": -100
+            },
+            {
+              "lightness": 45
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "simplified"
+          }]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [{
+              "color": "#dedee4"
+            },
+            {
+              "visibility": "on"
+            }
+          ]
+        }
+      ];
+
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 16,
+        center: pointLatLng,
+        scrollwheel: false,
+        zoomControl: false,
+        scaleControl: false,
+        mapTypeControl: false,
+        streetViewControl: false,
+        styles: stylesArray
+      });
+
+      var icon = {
+        path: "M15,0c-7.7,0.2-14,6-14.9,13.7C-0.1,15.1,0,16.6,0.3,18l0,0c0,0,0,0.2,0.1,0.5c0.2,1,0.6,2,1,3c1.6,3.6,5.1,9.6,13.2,16.2c0.5,0.4,1.2,0.4,1.7,0c8.1-6.5,11.7-12.6,13.2-16.2c0.5-1,0.8-2,1-3c0.1-0.3,0.1-0.5,0.1-0.5l0,0c0.2-0.9,0.3-1.9,0.3-2.9C30.9,6.7,23.9-0.1,15.5,0C15.3,0,15.1,0,15,0z M15.5,22.7c-4.1-0.1-7.3-3.5-7.2-7.5c0.1-4.1,3.5-7.3,7.5-7.2c4,0.1,7.2,3.4,7.2,7.4C23,19.5,19.6,22.7,15.5,22.7z",
+        fillColor: '#c69c6d',
+        fillOpacity: 1,
+        anchor: new google.maps.Point(15, 38),
+        strokeWeight: 0,
+        scale: 1
+      };
+
+      var marker = new google.maps.Marker({
+        position: pointLatLng,
+        map: map,
+        draggable: false,
+        icon: icon
+      });
+    }
+  </script>
 </body>
 
 </html>

@@ -74,4 +74,12 @@ $(document).ready(function () {
       ]
     });
   }
+
+  $('.js-input').blur(function () {
+    if($(this).val() != '') {
+      $(this).parent('.input-label').addClass('filled');
+    } else {
+      $(this).parent('.input-label').removeClass('filled');
+    }
+  });
 });
