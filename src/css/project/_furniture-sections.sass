@@ -1,0 +1,63 @@
+.furniture-sections
+  margin-bottom: 45px
+  width: 100%
+
+  @media(min-width: 768px)
+    border-collapse: collapse
+    display: table
+    table-layout: fixed
+
+  &:last-child
+    margin-bottom: 0
+
+  &__row
+    @media(min-width: 768px)
+      display: table-row
+
+    &:not(:first-child)
+      .fake-table__cell
+        &:first-child
+          @media(max-width: 767px)
+            border-top: none
+
+  &__cell
+    border: 1px solid #ccc
+    display: block
+    font-size: 16px
+    font-weight: 500
+    text-align: center
+    padding: 28px 15px
+
+    @media(min-width: 768px)
+      display: table-cell
+      padding: 20px 40px
+      text-align: left
+      vertical-align: top
+      width: 33.333%
+
+    @media(min-width: 1200px)
+      font-size: 20px
+      padding: 60px
+
+    &:not(:first-child)
+      @media(max-width: 767px)
+        border-top: none
+
+    &:hover,
+    &:focus
+      img
+        transform: scale(1.05)
+
+    img
+      transform: scale(1)
+      transition: transform 0.3s
+
+  &__image
+    @media(max-width: 767px)
+      max-width: 160px
+
+  &__cell-title
+    display: block
+
+    @media(min-width: 1200px)
+      text-align: left

@@ -1,0 +1,41 @@
+.fake-table
+  margin-bottom: 25px
+  width: 100%
+
+  @media(min-width: 768px)
+    border-collapse: collapse
+    display: table
+    table-layout: fixed
+
+  &:last-child
+    margin-bottom: 0
+
+  &__row
+    @media(min-width: 768px)
+      display: table-row
+
+    &:not(:first-child)
+      .fake-table__cell
+        &:first-child
+          @media(max-width: 767px)
+            border-top: none
+
+  &__cell
+    border: 1px solid #ccc
+    padding: 28px
+
+    @media(min-width: 768px)
+      display: table-cell
+      vertical-align: top
+
+    &:not(:first-child)
+      @media(max-width: 767px)
+        border-top: none
+
+    &--w_50
+      @media(min-width: 768px)
+        width: 50%
+
+    &--w_33
+      @media(min-width: 768px)
+        width: 33.333%

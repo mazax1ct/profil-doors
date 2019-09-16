@@ -44,38 +44,40 @@
         <div id="map" class="map"></div>
         <div class="form">
           <p class="form__title">Напишите нам</p>
-          <div class="form__row form__row--flex">
-            <div class="form__block form__block--w_33">
-              <div class="input-label" for="fio">
-                <input id="fio" class="js-input input" type="text" name="fio" value="">
-                <span class="input-label__placeholder">Фио</span>
+          <form method="get" action="contacts.html">
+            <div class="form__row form__row--flex">
+              <div class="form__block form__block--w_33">
+                <div class="input-label" for="fio">
+                  <input id="fio" class="js-input input" type="text" name="fio" value="">
+                  <span class="input-label__placeholder">Фио</span>
+                </div>
+              </div>
+              <div class="form__block form__block--w_33">
+                <div class="input-label" for="tel">
+                  <input id="tel" class="js-input input" type="text" name="tel" value="">
+                  <span class="input-label__placeholder">Телефон</span>
+                </div>
+              </div>
+              <div class="form__block form__block--w_33">
+                <div class="input-label" for="email">
+                  <input id="email" class="js-input input error" type="text" name="email" value="">
+                  <span class="input-label__placeholder">Email</span>
+                </div>
               </div>
             </div>
-            <div class="form__block form__block--w_33">
-              <div class="input-label" for="tel">
-                <input id="tel" class="js-input input" type="text" name="tel" value="">
-                <span class="input-label__placeholder">Телефон</span>
+            <div class="form__row">
+              <div class="input-label" for="message">
+                <textarea id="message" class="js-input textarea" name="message"></textarea>
+                <span class="input-label__placeholder">Сообщение</span>
               </div>
             </div>
-            <div class="form__block form__block--w_33">
-              <div class="input-label" for="email">
-                <input id="email" class="js-input input error" type="text" name="email" value="">
-                <span class="input-label__placeholder">Email</span>
-              </div>
-            </div>
-          </div>
-          <div class="form__row">
-            <div class="input-label" for="message">
-              <textarea id="message" class="js-input textarea" name="message"></textarea>
-              <span class="input-label__placeholder">Сообщение</span>
-            </div>
-          </div>
-          <button class="form__submit" type="submit">
-            <span>ОТПРАВИТЬ</span>
-            <svg class="form__submit-icon" aria-hidden="true">
-              <use xlink:href="#small-arrow-right" />
-            </svg>
-          </button>
+            <button class="form__submit" type="submit">
+              <span>ОТПРАВИТЬ</span>
+              <svg class="form__submit-icon" aria-hidden="true">
+                <use xlink:href="#small-arrow-right" />
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </div>

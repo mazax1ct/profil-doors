@@ -75,6 +75,14 @@ $(document).ready(function () {
     });
   }
 
+  //проверка на пустоту поля ввода при загрузке страницы
+  $('.js-input').each(function() {
+    if($(this).val() != '') {
+      $(this).parent('.input-label').addClass('filled');
+    }
+  });
+
+  //проверка на пустоту поля ввода
   $('.js-input').blur(function () {
     if($(this).val() != '') {
       $(this).parent('.input-label').addClass('filled');
@@ -82,4 +90,47 @@ $(document).ready(function () {
       $(this).parent('.input-label').removeClass('filled');
     }
   });
+
+  //слайдер серий
+  if ($('.js-series-slider').length) {
+    $('.js-series-slider').slick({
+      auto: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      centerMode: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
+      dots: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: "unslick"
+        }
+      ]
+    });
+  }
+
+  //слайдер раздвижных систем
+  if ($('.js-systems-slider').length) {
+    $('.js-systems-slider').slick({
+      adaptiveHeight: true,
+      auto: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: "unslick"
+        }
+      ]
+    });
+  }
 });
