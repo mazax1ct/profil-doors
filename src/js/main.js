@@ -133,4 +133,84 @@ $(document).ready(function () {
       ]
     });
   }
+
+  //запуск плавающего фильтра
+  if ($(".js-sticky-block").length) {
+    if ($("body").width() >= 768 && $("body").width() < 1200) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 200
+        });
+      }, 100);
+    } else if ($("body").width() >= 1200) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 30
+        });
+      }, 100);
+    } else {
+
+    }
+
+    //если блок для контента пустой, открепляем
+    if ($(".js-content-with-sticky").length) {
+      if ($('.js-content-with-sticky').html().trim() === '') {
+        $(".js-sticky-block").trigger("sticky_kit:detach");
+      }
+    }
+  }
+
+  //переключение табов
+  $('.js-tab').on('click', function() {
+    $('.js-tab').removeClass("is-active");
+    $(this).addClass("is-active");
+    $('.js-tab[data-link=' + $(this).attr("data-link") + ']').addClass("is-active");
+    $('.tab').removeClass("is-active");
+    $('.tab[data-target=' + $(this).attr("data-link") + ']').addClass("is-active");
+    return false;
+  });
+});
+
+//открепляем и перезапускаем прилипающий блок при резайзе
+$(window).resize(function() {
+  if ($("body").width() >= 768 && $("body").width() < 1200) {
+    $(".js-sticky-block").trigger("sticky_kit:detach");
+    setTimeout(function() {
+      $(".js-sticky-block").stick_in_parent({
+        offset_top: 200
+      });
+    }, 100);
+  } else if ($("body").width() >= 1200) {
+    $(".js-sticky-block").trigger("sticky_kit:detach");
+    setTimeout(function() {
+      $(".js-sticky-block").stick_in_parent({
+        offset_top: 30
+      });
+    }, 100);
+  } else {
+
+  }
+});
+
+//открепляем и перезапускаем прилипающий блок при повороте устройства
+$(window).on("orientationchange", function(event) {
+  if ($("body").width() >= 768 && $("body").width() < 1200) {
+    $(".js-sticky-block").trigger("sticky_kit:detach");
+    setTimeout(function() {
+      $(".js-sticky-block").stick_in_parent({
+        offset_top: 200
+      });
+    }, 100);
+  } else if ($("body").width() >= 1200) {
+    $(".js-sticky-block").trigger("sticky_kit:detach");
+    setTimeout(function() {
+      $(".js-sticky-block").stick_in_parent({
+        offset_top: 30
+      });
+    }, 100);
+  } else {
+
+  }
 });

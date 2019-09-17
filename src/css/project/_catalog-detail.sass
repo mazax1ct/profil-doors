@@ -1,0 +1,314 @@
+.catalog-detail
+  margin-bottom: 25px
+
+  @media(min-width: 768px)
+    display: flex
+    margin-bottom: 40px
+
+  @media(min-width: 1200px)
+    margin-bottom: 50px
+
+  &--furniture
+    align-items: flex-start
+    flex-wrap: wrap
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      display: block
+
+    .catalog-detail__left-block
+      @media(min-width: 768px) and (max-width: 1199px)
+        float: left
+
+      @media(min-width: 1200px)
+        width: 25%
+
+    .catalog-detail__center-block,
+    .catalog-detail__right-block
+      @media(min-width: 768px)
+        width: 67%
+
+      @media(min-width: 768px) and (max-width: 1199px)
+        margin-left: 33%
+
+    .catalog-detail__center-block
+      @media(min-width: 768px) and (max-width: 1199px)
+        margin-bottom: 30px
+
+      @media(min-width: 1200px)
+        width: 31%
+
+    .catalog-detail__right-block
+      @media(min-width: 1200px)
+        width: 44%
+
+    .catalog-detail__image
+      max-width: 100%
+
+    .catalog-detail__features
+      @media(min-width: 768px)
+        display: flex
+
+    .catalog-detail__buttons
+      @media(min-width: 768px)
+        display: flex
+        margin-bottom: 40px
+
+      @media(min-width: 1200px)
+        margin-bottom: 65px
+
+    .catalog-detail__button
+      &:nth-child(2)
+        @media(min-width: 768px)
+          margin-top: 0
+          margin-left: 20px
+          white-space: nowrap
+
+  &__left-block
+    display: flex
+    flex-direction: column
+
+    @media(min-width: 768px)
+      padding-right: 30px
+      width: 33%
+
+    @media(min-width: 1200px)
+      width: 30%
+
+    h1
+      margin-bottom: 25px
+      order: 2
+      text-align: left
+
+  &__center-block
+    text-align: center
+
+    @media(max-width: 767px)
+      margin-bottom: 25px
+
+    @media(min-width: 768px)
+      padding-right: 50px
+      text-align: left
+      width: 29.5%
+
+    @media(min-width: 1200px)
+      width: 26%
+
+  &__right-block
+    @media(min-width: 768px)
+      width: 37.5%
+
+    @media(min-width: 1200px)
+      width: 44%
+
+    .catalog-detail__price
+      margin-top: 0
+      margin-bottom: 20px
+
+      @media(min-width: 768px)
+        display: none
+
+    .catalog-detail__props-title
+      @media(min-width: 1200px)
+        margin-bottom: 15px
+
+    .catalog-detail__props-value
+      @media(min-width: 768px)
+        display: none
+
+  &__labels
+    margin-bottom: 5px
+    order: 1
+
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+      flex-direction: column
+
+  &__label
+    color: #fff
+    display: inline-flex
+    font-size: 8px
+    font-weight: 700
+    line-height: 11px
+    min-height: 25px
+    padding: 7px 5px
+    text-transform: uppercase
+
+    @media(min-width: 1200px)
+      font-size: 10px
+
+    &--stock
+      background-color: #707095
+
+    &--discount
+      background-color: #d5c596
+
+  &__label-icon
+    fill: #fff
+    height: 11px
+    margin-right: 5px
+    width: 11px
+
+  &__props
+    order: 3
+
+    @media(max-width: 767px)
+      display: none
+
+  &__props-title
+    color: #222
+    font-weight: 700
+    margin-bottom: 5px
+
+  &__props-value
+    margin-bottom: 15px
+
+  &__price
+    color: #d5ba96
+    font-size: 25px
+    font-weight: 500
+    line-height: 1
+    margin-top: 25px
+    white-space: nowrap
+
+    @media(min-width: 768px)
+      margin-bottom: 35px
+
+  &__info
+    @media(max-width: 767px)
+      display: none
+
+  &__image
+    @media(max-width: 767px)
+      max-width: 138px
+
+  &__colors
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 10px
+
+  &__color
+    border-radius: 50%
+    background: none
+    border: none
+    cursor: pointer
+    height: 30px
+    margin-right: 10px
+    margin-bottom: 10px
+    padding: 0
+    width: 30px
+
+    @media(min-width: 768px)
+      height: 40px
+      width: 40px
+
+    @media(min-width: 1200px)
+      height: 70px
+      width: 70px
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.is-active
+      box-shadow: 0 0 0 2px #d5ba96
+
+  &__color-image
+    display: block
+    padding: 2px
+
+  &__features
+    display: flex
+    justify-content: space-between
+
+    @media(max-width: 1199px)
+      display: none
+
+  &__buttons
+    margin-top: 15px
+    text-align: center
+
+    @media(min-width: 1200px)
+      display: flex
+      margin-top: 35px
+      margin-bottom: 65px
+
+  &__button
+    max-width: 400px
+    width: 100%
+
+    &:nth-child(2)
+      @media(max-width: 1199px)
+        margin-top: 10px
+
+      @media(min-width: 1200px)
+        margin-left: 20px
+        white-space: nowrap
+
+
+.tabs-nav
+  border-top: 1px solid #ccc
+  border-bottom: 1px solid #ccc
+  font-size: 12px
+  font-weight: 700
+  display: flex
+  list-style: none
+  margin-bottom: 25px
+  overflow-x: auto
+  padding: 0
+
+  @media(max-width: 767px)
+    display: none
+
+  &__item
+    margin-right: 60px
+
+    &:last-child
+      margin-right: 0
+
+  &__link
+    color: #999
+    display: inline-block
+    padding-top: 15px
+    padding-bottom: 15px
+    transition: color 0.3s
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      color: #d7bc99
+      text-decoration: underline
+
+    &.is-active
+      color: #d7bc99
+
+.tabs
+  margin-bottom: 35px
+
+  @media(min-width: 1200px)
+    margin-bottom: 60px
+
+.tabs-link
+  color: #999
+  display: block
+  font-size: 12px
+  font-weight: 700
+  padding-top: 10px
+  padding-bottom: 10px
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    color: #d7bc99
+    text-decoration: underline
+
+  &.is-active
+    color: #d7bc99
+
+  @media(min-width: 768px)
+    display: none
+
+.tab
+  display: none
+
+  &.is-active
+    display: block

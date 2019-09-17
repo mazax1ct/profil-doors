@@ -4,6 +4,12 @@
   @media(min-width: 1200px)
     margin-bottom: 70px
 
+  &:last-child
+    margin-bottom: 0
+
+    @media(min-width: 1200px)
+      margin-bottom: 0
+
   &__title
     margin-bottom: 0
 
@@ -37,6 +43,9 @@
     padding-left: 40px
     padding-right: 40px
 
+  @media(min-width: 1200px)
+    margin-bottom: 25px
+
   .slick-track
     margin-left: 0
     margin-right: 0
@@ -63,6 +72,7 @@
   font-size: 15px
   margin-left: auto
   margin-right: auto
+  padding-top: 10px
   text-decoration: none
   width: 150px
 
@@ -81,32 +91,61 @@
 
   &:hover,
   &:focus
-    text-decoration: underline
+    text-decoration: none
 
-    img
+    .product__title
+      text-decoration: underline
+
+    .product__image
       transform: scale(1.05)
 
-  &__image
+  &__image-block
+    display: block
     margin-bottom: 15px
     text-align: center
 
-    img
-      display: initial
-      transform: scale(1)
-      transition: transform 0.3s
+  &__image
+    display: initial
+    transform: scale(1)
+    transition: transform 0.3s
 
-  &__stock
-    background-color: #707095
+  &__labels
+    display: block
+    min-height: 25px
+    margin-bottom: 5px
+    position: relative
+    z-index: 1
+
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      min-height: 50px
+
+    @media(min-width: 1200px)
+      margin-bottom: 10px
+
+  &__label
     color: #fff
     display: inline-flex
-    font-size: 9px
+    font-size: 8px
     font-weight: 700
     line-height: 11px
-    margin-top: 30px
+    min-height: 25px
     padding: 7px 5px
     text-transform: uppercase
 
-  &__stock-icon
+    @media(min-width: 1200px)
+      font-size: 10px
+
+    &--stock
+      background-color: #707095
+
+    &--discount
+      background-color: #d5c596
+
+  &__label-icon
     fill: #fff
     height: 11px
     margin-right: 5px

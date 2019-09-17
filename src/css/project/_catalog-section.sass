@@ -1,0 +1,255 @@
+.catalog-section
+  @media(min-width: 768px)
+    display: flex
+
+  &__filter-block
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      padding-right: 30px
+      width: 28%
+
+    @media(min-width: 1200px)
+      width: 24.5%
+
+  &__list
+    @media(min-width: 768px)
+      width: 72%
+
+    @media(min-width: 1200px)
+      width: 75.5%
+
+.catalog-filter
+  &__section
+    @media(min-width: 768px)
+      margin-bottom: 25px
+
+  &__title
+    color: #222
+    font-size: 15px
+    font-weight: 700
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      margin-bottom: 25px
+
+  &__list
+    @media(max-width: 767px)
+      display: flex
+      flex-wrap: wrap
+
+  &__item
+    cursor: pointer
+
+    @media(max-width: 767px)
+      margin-right: 10px
+      margin-bottom: 10px
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__item-checkbox
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .catalog-filter__item-image
+      box-shadow: 0 0 0 2px #d5c596
+
+    &:checked ~ .catalog-filter__item-text
+      color: #222
+
+  &__item-image
+    border-radius: 50%
+    height: 27px
+    display: flex
+    min-width: 27px
+    padding: 2px
+    width: 27px
+
+    @media(min-width: 768px)
+      margin-right: 10px
+
+  &__item-text
+    font-size: 13px
+
+    @media(max-width: 767px)
+      display: none
+
+    @media(min-width: 1200px)
+      font-size: 15px
+
+  &__button
+    background: none
+    border: none
+    color: #c69c6d
+    cursor: pointer
+    display: inline-block
+    font-size: 12px
+    font-weight: 500
+    letter-spacing: 0.4px
+    min-height: 35px
+    margin-right: 15px
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-right: 18px
+    padding-left: 0
+    position: relative
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+    &--submit
+
+      &::after
+        background-image: url("data:image/svg+xml,%3Csvg width='6px' height='9px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12'%3E%3Cpath fill='%23c69c6d' d='M1.8,12L8,6L1.8,0L0,1.7L4.5,6L0,10.3L1.8,12z'/%3E%3C/svg%3E%0A")
+        content: ''
+        height: 9px
+        left: auto
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 6px
+
+    &--reset
+      color: #222
+
+      &::after
+        background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'%3E%3Cpolygon fill='%23222222' points='6,4.5 5.8,4.3 9,1.3 7.7,0 4.5,3.1 1.3,0 0,1.3 3.2,4.3 3,4.5 3.2,4.7 0,7.7 1.3,9 4.5,5.9 7.7,9 9,7.7 5.8,4.7'/%3E%3C/svg%3E")
+        content: ''
+        height: 9px
+        left: auto
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 9px
+
+.catalog-list
+  display: flex
+  flex-wrap: wrap
+  margin-left: -8px
+  margin-right: -8px
+
+  @media(min-width: 768px)
+    margin-left: -20px
+    margin-right: -20px
+
+  &--furniture
+    .catalog-list__item
+      margin-bottom: 35px
+      width: 50%
+
+      @media(min-width: 768px)
+        width: 33.333%
+
+      @media(min-width: 1200px)
+        margin-bottom: 90px
+        width: 25%
+
+  &--doors
+    .catalog-list__item
+      margin-bottom: 25px
+      width: 33.333%
+
+      @media(min-width: 768px)
+        width: 33.333%
+
+      @media(min-width: 1200px)
+        margin-bottom: 55px
+        width: 25%
+
+    .catalog-item__labels
+      margin-top: -50px
+
+      @media(min-width: 768px)
+        align-items: flex-start
+        display: flex
+        flex-direction: column
+        min-height: 25px
+        margin-top: -38px
+
+  &__item
+    padding-left: 8px
+    padding-right: 8px
+
+    @media(min-width: 768px)
+      padding-left: 20px
+      padding-right: 20px
+
+.catalog-item
+  display: flex
+  flex-direction: column
+  height: 100%
+
+  &:hover,
+  &:focus
+    text-decoration: none
+
+    .catalog-item__title
+      text-decoration: underline
+
+    .catalog-item__image
+      transform: scale(1.05)
+
+  &__image-block,
+  &__labels,
+  &__title
+    display: block
+
+  &__image-block
+    flex-grow: 1
+
+  &__image
+    transition: transform 0.3s
+    transform: scale(1)
+
+  &__labels
+    margin-bottom: 5px
+    position: relative
+    z-index: 1
+
+    @media(min-width: 1200px)
+      margin-bottom: 10px
+
+  &__label
+    color: #fff
+    display: inline-flex
+    font-size: 8px
+    font-weight: 700
+    line-height: 11px
+    min-height: 25px
+    padding: 7px 5px
+    text-transform: uppercase
+
+    @media(min-width: 1200px)
+      font-size: 10px
+
+    &--stock
+      background-color: #707095
+
+    &--discount
+      background-color: #d5c596
+
+  &__label-icon
+    fill: #fff
+    height: 11px
+    margin-right: 5px
+    width: 11px
+
+  &__title
+    font-size: 13px
+    line-height: 1.2
+
+    @media(min-width: 1200px)
+      font-size: 15px
