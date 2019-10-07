@@ -56,6 +56,7 @@
   display: block
   font-size: 16px
   font-weight: 500
+  height: 100%
   text-decoration: none
   text-align: center
 
@@ -71,10 +72,13 @@
       transform: scale(1.05)
 
   &__image-block
+    display: flex
+    
     @media(min-width: 1200px)
       min-width: 127px
 
   &__image
+    max-height: 415px
     transform: scale(1)
     transition: transform 0.3s
 
