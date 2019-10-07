@@ -175,42 +175,46 @@ $(document).ready(function () {
 
 //открепляем и перезапускаем прилипающий блок при резайзе
 $(window).resize(function() {
-  if ($("body").width() >= 768 && $("body").width() < 1200) {
-    $(".js-sticky-block").trigger("sticky_kit:detach");
-    setTimeout(function() {
-      $(".js-sticky-block").stick_in_parent({
-        offset_top: 200
-      });
-    }, 100);
-  } else if ($("body").width() >= 1200) {
-    $(".js-sticky-block").trigger("sticky_kit:detach");
-    setTimeout(function() {
-      $(".js-sticky-block").stick_in_parent({
-        offset_top: 30
-      });
-    }, 100);
-  } else {
+  if ($(".js-sticky-block").length) {
+    if ($("body").width() >= 768 && $("body").width() < 1200) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 200
+        });
+      }, 100);
+    } else if ($("body").width() >= 1200) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 30
+        });
+      }, 100);
+    } else {
 
+    }
   }
 });
 
 //открепляем и перезапускаем прилипающий блок при повороте устройства
 $(window).on("orientationchange", function(event) {
-  if ($("body").width() >= 768 && $("body").width() < 1200) {
-    $(".js-sticky-block").trigger("sticky_kit:detach");
-    setTimeout(function() {
-      $(".js-sticky-block").stick_in_parent({
-        offset_top: 200
-      });
-    }, 100);
-  } else if ($("body").width() >= 1200) {
-    $(".js-sticky-block").trigger("sticky_kit:detach");
-    setTimeout(function() {
-      $(".js-sticky-block").stick_in_parent({
-        offset_top: 30
-      });
-    }, 100);
-  } else {
+  if ($(".js-sticky-block").length) {
+    if ($("body").width() >= 768 && $("body").width() < 1200) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 200
+        });
+      }, 100);
+    } else if ($("body").width() >= 1200) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 30
+        });
+      }, 100);
+    } else {
 
+    }
   }
 });
