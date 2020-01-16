@@ -11,7 +11,13 @@
   &--2
     .features-list__item
       @media(min-width: 768px)
+        padding-right: 15px
+        padding-left: 15px
+        text-align: center
         width: 20%
+
+      @media(min-width: 1200px)
+        padding-right: 15px
 
     .feature__image
       min-height: 58px
@@ -28,6 +34,8 @@
       padding-right: 40px
 
 .feature
+  display: block
+
   @media(max-width: 767px)
     display: flex
 
