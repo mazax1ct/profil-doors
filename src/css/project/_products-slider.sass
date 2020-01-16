@@ -47,8 +47,17 @@
     margin-bottom: 25px
 
   .slick-track
+    display: flex
     margin-left: 0
     margin-right: 0
+
+    .slick-slide
+      display: flex
+      flex-direction: column
+      height: auto
+
+      .product
+        height: 100%
 
   .slick-arrow
     height: 30px
@@ -68,7 +77,8 @@
 
 .product
   color: #222
-  display: block
+  display: flex
+  flex-direction: column
   font-size: 15px
   margin-left: auto
   margin-right: auto
@@ -100,7 +110,10 @@
       transform: scale(1.05)
 
   &__image-block
-    display: block
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    justify-content: center
     margin-bottom: 15px
     text-align: center
 
