@@ -171,6 +171,11 @@ $(document).ready(function () {
     $('.tab[data-target=' + $(this).attr("data-link") + ']').addClass("is-active");
     return false;
   });
+
+  //кастомный скролл
+  $('.js-custom-scroll').each(function(index, element) {
+    new SimpleBar(element, { autoHide: false })
+  });
 });
 
 //открепляем и перезапускаем прилипающий блок при резайзе
